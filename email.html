@@ -12,16 +12,13 @@
   <body>
     
     <div class="container-fluid">
-
-        <!--Nav Bar container-->
         <div class="container">
-            
-            <div class="row">
 
+            <!--Nav Bar container-->
+            <div class="row">
                 <h2 class="col-md-6 text-white pb-3"><img src="logo.png" alt="logo" style="width:30px">YouMail</h2>
                 
                 <div class="col-md-6 search-form">
-                    
                     <form action="#" class="text-right">
                         <div class="input-group">
                             <input type="text" class="form-control input-sm" placeholder="Search">
@@ -29,6 +26,7 @@
                         </div>			 
                     </form>
                 </div>
+
                 <ul class="nav nav-tabs custom-tab border-bottom-0 mt-4" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link" id="compose-tab" data-toggle="tab" aria-controls="spam" href="#compose" role="tab" aria-selected="false">
@@ -56,45 +54,62 @@
                     </li>
                 </ul>
             </div>
+        
+        
+            <!--email container-->
 
-        <!--email container-->
-
-        <div class="container">
+            <div class="container justify-content-center">
             <table class="table table-hover">
-                
-            <div class="row" style="background-color: #e3f2fd">
-              
-                <thead>
-                    <tr>
-                      <th scope="col-sm-2">INBOX</th>
-                      <th scope="col-sm-3"></th>
-                      <th scope="col-sm-5"></th>
-                      <th scope="col-sm-2"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">MO</th>
-                      <td>Mark Otto</td>
-                      <td>loren ipsum bla blab</td>
-                      <td>9:50pm</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">GQ</th>
-                      <td>Gianella Quipuzco</td>
-                      <td>loren ipsum bla blab</td>
-                      <td>9:50pm</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">JS</th>
-                      <td>John Smith</td>
-                      <td>loren ipsum bla blab</td>
-                      <td>9:50pm</td>
-                    </tr>
-                  </tbody>
-            </div>
+                <div class="row" style="background-color: #e3f2fd">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-6 col-md-4 col-xl-2">INBOX</th>
+                            <th class="col-sm-3 col-md-4 col-xl-5"></th>
+                            <th class="col-sm-5 col md-5 col-xl-2" ></th>
+                            <th class="col-md-6 d-sm-none"></th>
+                        </tr>
+                    </thead>  
+                    <tbody>
+                        <tr class="email-selected">
+                            <th scope="row">MO</th>
+                            <td>Mark Otto</td>
+                            <td>Email template finished! </td>
+                            <td>9:50pm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">GQ</th>
+                            <td>Gianella Quipuzco</td>
+                            <td>loren ipsum bla blab</td>
+                            <td>8:30pm</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JS</th>
+                            <td>John Smith</td>
+                            <td>loren ipsum bla blab</td>
+                            <td>7:10pm</td>
+                        </tr>
+                    </tbody>
+                </div>
             </table>
-        </div> 
+
+            <div class="message">
+                <h4>Email template finished!</h4>
+                <span><b>Mark Otto</b> markotto@mail.com</span>
+                <h6><b>To:</b> Me</h6>
+                <p><b>Date</b> May 3rd, 2023 at 9:50pm </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2" type="button">Reply</button>
+                  </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Reply</label>
+                </div>
+            </div>
+            </div>
         </div>
     </div>
 

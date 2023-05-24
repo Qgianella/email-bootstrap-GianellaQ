@@ -12,3 +12,16 @@
 #compose-tab, #trash-tab, #archive-tab, #pin-tab{
     color:white;
 }
+.email-selected {
+    background-color: #f0dbef
+}
+.message {
+    background-color: #ffffff;
+    border: #B754DA;
+    padding: 22px;
+}
+
+.btn{
+    background-color: #B754DA;
+    align-content: center;
+}
